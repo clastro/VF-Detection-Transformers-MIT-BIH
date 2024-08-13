@@ -1,0 +1,638 @@
+<html><head><title>Sudden Cardiac Death Holter Database</title></head>
+<body bgcolor="white">
+
+<table width="100%" cellpadding="2" cellspacing="0" border="0">
+  <tbody><tr><td colspan="2" align="right" bgcolor="#4040f0">
+    <table width="100%" cellpadding="2" cellspacing="0" border="0">
+    <tbody><tr><td align="right"><font color="white"><b>
+      <a href="http://physionet.org/"><font color="white">PhysioNet</font></a>
+	 &nbsp;�&nbsp; 
+      <a href="http://physionet.org/physiobank/"><font color="white">PhysioBank</font></a>
+	 &nbsp;�&nbsp;
+      <a href="http://physionet.org/physiotools/"><font color="white">PhysioToolkit</font></a></b>
+    </font></td></tr></tbody></table>
+  </td></tr>
+
+  <tr bgcolor="#d0d0ff">
+  <td><h2><font color="blue">PhysioBank</font><br>
+	<font size="-1">physiologic signal archives<br>
+	    for biomedical research</font></h2>
+  </td>
+  <td align="right">
+    <form method="get" action="/cgi-bin/htsearch">
+    <input type="hidden" name="method" value="and">
+    <input type="hidden" name="format" value="builtin-long">
+    <input type="hidden" name="sort" value="score">
+    <input type="hidden" name="config" value="htdig">
+    <input type="hidden" name="restrict" value="">
+    <input type="hidden" name="exclude" value="">
+    <input type="text" size="20" name="words" value="">
+    <input type="submit" value="Search">
+    </form>
+    <a href="http://physionet.org/search.shtml">Advanced Search</a>&nbsp;|
+    <a href="http://physionet.org/physiotour/">Tour</a>&nbsp;|
+    <a href="http://physionet.org/mirrors/">Mirrors</a><br>
+    <a href="http://physionet.org/citations.shtml">How to Cite</a>&nbsp;|
+    <a href="http://physionet.org/guidelines.shtml">Contributing</a>&nbsp;|
+    <a href="http://physionet.org/faq.shtml">FAQ</a>
+  </td>
+  </tr>
+
+  <tr><td colspan="2" align="right" bgcolor="#4040f0">
+    <table width="100%" cellpadding="2" cellspacing="0" border="0">
+    <tbody><tr><td><font color="white"><b>
+    <a href="http://physionet.org/physiobank/physiobank-intro.shtml"><font color="white">Getting Started</font></a>
+	 &nbsp;�&nbsp;
+    <a href="http://physionet.org/physiobank/database/"><font color="white">Signal Archives</font></a>
+	 &nbsp;�&nbsp;
+    <a href="http://physionet.org/cgi-bin/chart?database=edb"><font color="white">Chart-O-Matic</font></a>
+	 &nbsp;�&nbsp;
+    <a href="http://physionet.org/physiobank/about.shtml"><font color="white">About PhysioBank</font></a>
+    </b></font>
+    </td>
+    <td align="right">
+    <a href="http://www.ncrr.nih.gov/" target="other"><img src="European%20ST-T%20Database_files/ncrr-blue.png" border="0" alt="NIH National Center for Research Resources"></a>
+    <a href="http://www.ncrr.nih.gov/" target="other"><font color="white"> <b>NCRR</b></font></a>
+    </td></tr></tbody></table>
+  </td></tr>
+</tbody></table>
+
+<p>
+</p><h1 align="center">The Sudden Cardiac Death Holter Database</h1>
+
+<p>
+&nbsp;
+</p>
+<center><img src="icons/vf-30.png"></center>
+
+<p>
+<br>
+<font size=+1><b>Introduction </b></font> 
+<p>
+An estimated 400,000 Americans and millions worldwide die suddenly each year. 
+These events are most often initiated with a sustained ventricular 
+tachyarrhythmia, including ventricular tachycardia (monomorphic or polymorphic), 
+ventricular flutter, or ventricular fibrillation, with a smaller percentage 
+related to a primary bradyarrhythmia.  Sudden cardiac death syndrome may be due 
+to a wide variety of different electrical and mechanical substrates, including 
+acute myocardial infarction, chronic coronary disease with prior myocardial 
+infarction(s), cardiomyopathies, myocarditis, valvular heart disease, right 
+ventricular dysplasia, the long Q-T syndrome (acquired or congenital), Wolff-
+Parkinson-White pre-excitation, the Brugada syndrome, drug toxicity (e.g., 
+proarrhythmic effects of cardioactive drugs; epinephrine, cocaine, and related 
+stimulants), and so forth.  Moreover, some individuals have no demonstrable 
+electrical or mechanical predisposition.
+
+<p>
+Although understanding the basic mechanisms and identifying predictive features 
+of life-threatening arrhythmias is a major public health priority, progress in 
+this area has been impeded by the lack of relevant databases.  Holter monitor 
+records obtained during spontaneous episodes of sustained ventricular 
+tachyarrhythmias or life-threatening bradyarrhythmias are relatively rare.  
+Those tapes that do exist have sometimes been held in a "proprietary" fashion by 
+investigators at different centers.  Other investigators, while enthusiastic 
+about sharing these invaluable datasets have, until now, not had a mechanism to 
+bank their data.  Since no single center is likely to accrue sufficient numbers 
+of well-annotated recordings of this type to allow for more definitive 
+evaluations, the ability to investigate the basis of spontaneous, life-
+threatening arrhythmias and to develop forecasting algorithms has been stymied.
+
+<p>
+PhysioNet is inaugurating a Sudden Cardiac Death (SCD) database to facilitate 
+progress in this important area of electrophysiology by making available to the 
+scientific community a collection of relevant recordings.  We initiate this new 
+component with 19 Holter records from the BIH/MIT collection, including 16 
+patients with underlying sinus rhythm and 3 with atrial fibrillation.  All 
+patients had a sustained ventricular tachyarrhythmia, and most an actual cardiac 
+arrest.
+
+<p>
+These recordings were mainly obtained in the 1980s in Boston area hospitals, and 
+were later compiled as part of a study of ventricular arrhythmias.  Because of 
+the retrospective nature of this collection, there are important limitations.  
+Patient information is limited, and sometimes completely unavailable, including 
+data regarding drug regimens and drug dosages.  [George - what about mechanical 
+issues re: tape quality, types of recordings, etc.??]   Further, these cases may 
+not be representative of spontaneous episodes of sudden death in what is likely 
+a very heterogenous group of subjects.  However, despite major shortcomings, 
+these unique recordings may provide important clues to the pathogenesis of 
+sudden death syndrome and serve as a nucleating point for other contributions 
+from investigators worldwide who have access to similar records.
+
+<p>
+Preliminary analysis of data from some of these recordings has been described in 
+the following publications:
+
+<ol>
+<li> Goldberger AL, Rigney DR, Mietus J, Antman EW, Greenwald S.  Nonlinear 
+dynamics in sudden cardiac death syndrome: heart rate oscillations and 
+bifurcations. <i>Experientia</i> 1988; <b>44</b>:983-987.  (Analysis based on 16 subjects with 
+underlying sinus rhythm.)
+</li>
+
+<li> Courtemanche M, Glass L. Rosengarten MD, Goldberger AL.  Beyond pure 
+parasystole:  promises and problems in modeling complex arrhythmias.  <i>Am J 
+Physiol</i> 1989; <b>257</b> (Heart Circ Physiol 26):H693-H706.  (Case 2 in this report is
+based on data from subject 47 in the SCD database.)
+</li>
+
+<li> Goldberger AL, Rigney DR.  On the non-linear motions of the heart: 
+fractals, chaos and cardiac dynamics.  In: Goldbeter A, ed.  <i>Cell to Cell 
+Signaling: From Experiments to Theoretical Models.</i>  San Diego: Academic Press, 
+1989, pp. 541-550.  (Figure 4, showing complex periodic patterns of ventricular 
+premature beats, is derived from data from subject ? in the SCD database.)
+</li>
+</ol>
+
+<p>
+<hr>
+<p>
+<font size=+1><b>ECG data and beat annotations</b></font>
+<p>
+<center>
+<table border="0" cellspacing="1" cellpadding="3" width="720">
+<tbody>
+
+<tr bgcolor="cc9999">
+<th align="center" width="13%">Signals</th>
+<th align="center" width="13%">Header</th>
+<th align="center" width="13%">Unaudited<br>Annotations</th>
+<th align="center" width="13%">Audited<br>Annotations</th>
+<th align="center" width="13%">Signal <br>Duration</th>
+<th align="center" width="17%">VF Onset <br>Time (elapsed)</th>
+<th align="center" width="18%">View <br> Waveform</th>
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/30.dat">30.dat</a></td>
+<td align="center"><a href="ecg/30.hea">30.hea</a></td>
+<td align="center"><a href="ecg/30.ari" target="_other">30.ari</a></td>
+<td align="center"><a href="ecg/30.atr" target="_other">30.atr</a></td>
+<td align="center"> 24:33:17 </td>
+<td align="center"> 07:54:33 </td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=30&window=10&tstartHMS=7:54:30&sweep=25&annotator=atr" target="_other">30-waveform</a></td> 
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/31.dat">31.dat</a></td>
+<td align="center"><a href="ecg/31.hea">31.hea</a></td>
+<td align="center"><a href="ecg/31.ari" target="_other">31.ari</a></td>
+<td align="center"><a href="ecg/31.atr" target="_other">31.atr</a></td>
+<td align="center"> 13:58:40 </td>
+<td align="center"> 14:42:24 </td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=31&window=10&tstartHMS=13:42:20&sweep=25&annotator=atr" target="_other">31-waveform</a></td>
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/32.dat">32.dat</a></td>
+<td align="center"><a href="ecg/32.hea">32.hea</a></td>
+<td align="center"><a href="ecg/32.ari" target="_other">32.ari</a></td>
+<td align="center"><a href="ecg/32.atr" target="_other">32.atr</a></td>
+<td align="center"> 24:20:00 </td>
+<td align="center"> 16:45:18 </td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=32&window=10&tstartHMS=16:45:15&sweep=25&annotator=atr" target="_other">32-waveform</a></td>
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/33.dat">33.dat</a></td>
+<td align="center"><a href="ecg/33.hea">33.hea</a></td>
+<td align="center"><a href="ecg/33.ari" target="_other">33.ari</a></td>
+<td align="center"> &nbsp; </td>
+<td align="center"> 24:33:00</td>
+<td align="center"> 04:46:19 </td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=33&window=10&tstartHMS=04:46:15&sweep=25&annotator=ari" target="_other">33-waveform</a></td> 
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/34.dat">34.dat</a></td>
+<td align="center"><a href="ecg/34.hea">34.hea</a></td>
+<td align="center"><a href="ecg/34.ari" target="_other">34.ari</a></td>
+<td align="center"><a href="ecg/34.atr" target="_other">34.atr</a></td>
+<td align="center"> 07:05:20 </td>
+<td align="center"> 06:35:44 </td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=34&window=10&tstartHMS=06:35:40&sweep=25&annotator=atr" target="_other">34-waveform</a></td> 
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/35.dat">35.dat</a></td>
+<td align="center"><a href="ecg/35.hea">35.hea</a></td>
+<td align="center"><a href="ecg/35.ari" target="_other">35.ari</a></td>
+<td align="center"><a href="ecg/35.atr" target="_other">35.atr</a></td>
+<td align="center"> 24:52:00 </td>
+<td align="center"> 24:34:56 </td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=35&window=10&tstartHMS=24:34:50&sweep=25&annotator=atr" target="_other">35-waveform</a></td> 
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/36.dat">36.dat</a></td>
+<td align="center"><a href="ecg/36.hea">36.hea</a></td>
+<td align="center"><a href="ecg/36.ari" target="_other">36.ari</a></td>
+<td align="center"><a href="ecg/36.atr" target="_other">36.atr</a></td>
+<td align="center"> 20:21:20 </td>
+<td align="center"> 18:59:01 </td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=36&window=10&tstartHMS=18:58:55&sweep=25&annotator=atr" target="_other">36-waveform</a></td> 
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/37.dat">37.dat</a></td>
+<td align="center"><a href="ecg/37.hea">37.hea</a></td>
+<td align="center"><a href="ecg/37.ari" target="_other">37.ari</a></td>
+<td align="center"> &nbsp;</td>
+<td align="center"> 25:08:00 </td>
+<td align="center"> 01:31:13 </td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=37&window=10&tstartHMS=01:31:10&sweep=25&annotator=ari" target="_other">37-waveform</a></td> 
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/38.dat">38.dat</a></td>
+<td align="center"><a href="ecg/38.hea">38.hea</a></td>
+<td align="center"><a href="ecg/38.ari" target="_other">38.ari</a></td>
+<td align="center"> &nbsp; </td>
+<td align="center"> 18:18:25 </td>
+<td align="center"> 08:01:54 </td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=38&window=10&tstartHMS=08:01:50&sweep=25&annotator=ari" target="_other">38-waveform</a></td> 
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/39.dat">39.dat</a></td>
+<td align="center"><a href="ecg/39.hea">39.hea</a></td>
+<td align="center"><a href="ecg/39.ari" target="_other">39.ari</a></td>
+<td align="center"> &nbsp;</td>
+<td align="center"> 05:47:00 </td>
+<td align="center"> 04:37:51 </td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=39&window=10&tstartHMS=04:37:45&sweep=25&annotator=ari" target="_other">39-waveform</a></td> 
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/40.dat">40.dat</a></td>
+<td align="center"><a href="ecg/40.hea">40.hea</a></td>
+<td align="center"><a href="ecg/40.ari" target="_other">40.ari</a></td>
+<td align="center"> &nbsp;</td>
+<td align="center"> 24:53:00 </td>
+<td align="center"> (paced, no VF)</td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=40&window=10&tstartHMS=00:00:00&sweep=25&annotator=ari" target="_other">40-waveform</a></td> 
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/41.dat">41.dat</a></td>
+<td align="center"><a href="ecg/41.hea">41.hea</a></td>
+<td align="center"><a href="ecg/41.ari" target="_other">41.ari</a></td>
+<td align="center"><a href="ecg/41.atr" target="_other">41.atr</a></td>
+<td align="center"> 03:56:00 </td>
+<td align="center"> 02:59:24 </td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=41&window=10&tstartHMS=02:59:20&sweep=25&annotator=atr" target="_other">41-waveform</a></td> 
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/42.dat">42.dat</a></td>
+<td align="center"><a href="ecg/42.hea">42.hea</a></td>
+<td align="center"><a href="ecg/42.ari" target="_other">42.ari</a></td>
+<td align="center"> &nbsp;</td>
+<td align="center"> 25:08:10 </td>
+<td align="center"> (no VF) </td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=42&window=10&tstartHMS=00:00:00&sweep=25&annotator=ari" target="_other">42-waveform</a></td> 
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/43.dat">43.dat</a></td>
+<td align="center"><a href="ecg/43.hea">43.hea</a></td>
+<td align="center"><a href="ecg/43.ari" target="_other">43.ari</a></td>
+<td align="center"> &nbsp;</td>
+<td align="center"> 23:07:50 </td>
+<td align="center"> 15:37:11 </td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=43&window=10&tstartHMS=15:37:05&sweep=25&annotator=ari" target="_other">43-waveform</a></td> 
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/44.dat">44.dat</a></td>
+<td align="center"><a href="ecg/44.hea">44.hea</a></td>
+<td align="center"><a href="ecg/44.ari" target="_other">44.ari</a></td>
+<td align="center"> &nbsp;</td>
+<td align="center"> 23:20:00 </td>
+<td align="center"> 19:38:45 </td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=44&window=10&tstartHMS=19:38:40&sweep=25&annotator=ari" target="_other">44-waveform</a></td> 
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/45.dat">45.dat</a></td>
+<td align="center"><a href="ecg/45.hea">45.hea</a></td>
+<td align="center"><a href="ecg/45.ari" target="_other">45.ari</a></td>
+<td align="center"><a href="ecg/45.atr" target="_other">45.atr</a></td>
+<td align="center"> 24:09:20 </td>
+<td align="center"> 18:09:17 </td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=45&window=10&tstartHMS=18:09:10&sweep=25&annotator=atr" target="_other">45-waveform</a></td> 
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/46.dat">46.dat</a></td>
+<td align="center"><a href="ecg/46.hea">46.hea</a></td>
+<td align="center"><a href="ecg/46.ari" target="_other">46.ari</a></td>
+<td align="center"><a href="ecg/46.atr" target="_other">46.atr</a></td>
+<td align="center"> 04:15:10 </td>
+<td align="center"> 03:41:47 </td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=46&window=10&tstartHMS=03:41:40&sweep=25&annotator=atr" target="_other">46-waveform</a></td> 
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/47.dat">47.dat</a></td>
+<td align="center"><a href="ecg/47.hea">47.hea</a></td>
+<td align="center"><a href="ecg/47.ari" target="_other">47.ari</a></td>
+<td align="center"> &nbsp;</td>
+<td align="center"> 23:35:50 </td>
+<td align="center"> 06:13:01 </td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=47&window=10&tstartHMS=06:12:55&sweep=25&annotator=ari" target="_other">47-waveform</a></td> 
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/48.dat">48.dat</a></td>
+<td align="center"><a href="ecg/48.hea">48.hea</a></td>
+<td align="center"><a href="ecg/48.ari" target="_other">48.ari</a></td>
+<td align="center"> &nbsp;</td>
+<td align="center"> 24:36:15 </td>
+<td align="center"> 02:29:40 </td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=48&window=10&tstartHMS=02:29:35&sweep=25&annotator=ari" target="_other">48-waveform</a></td> 
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/49.dat">49.dat</a></td>
+<td align="center"><a href="ecg/49.hea">49.hea</a></td>
+<td align="center"><a href="ecg/49.ari" target="_other">49.ari</a></td>
+<td align="center"><a href="ecg/49.atr" target="_other">49.atr</a></td>
+<td align="center"> 25:01:40 </td>
+<td align="center"> (paced, no VF) </td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=49&window=10&tstartHMS=13:42:20&sweep=25&annotator=atr" target="_other">49-waveform</a></td> 
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/50.dat">50.dat</a></td>
+<td align="center"><a href="ecg/50.hea">50.hea</a></td>
+<td align="center"><a href="ecg/50.ari" target="_other">50.ari</a></td>
+<td align="center"> &nbsp;</td>
+<td align="center"> 23:07:38 </td>
+<td align="center"> 11:45:43 </td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=50&window=10&tstartHMS=11:45:40&sweep=25&annotator=ari" target="_other">50-waveform</a></td> 
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/51.dat">51.dat</a></td>
+<td align="center"><a href="ecg/51.hea">51.hea</a></td>
+<td align="center"><a href="ecg/51.ari" target="_other">51.ari</a></td>
+<td align="center"><a href="ecg/51.atr" target="_other">51.atr</a></td>
+<td align="center"> 25:08:30 </td>
+<td align="center"> 22:58:23 </td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=51&window=10&tstartHMS=22:58:20&sweep=25&annotator=atr" target="_other">51-waveform</a></td> 
+</tr>
+
+<tr bgcolor="88dddd">
+<td align="center"><a href="ecg/52.dat">52.dat</a></td>
+<td align="center"><a href="ecg/52.hea">52.hea</a></td>
+<td align="center"><a href="ecg/52.ari" target="_other">52.ari</a></td>
+<td align="center"><a href="ecg/52.atr" target="_other">52.atr</a></td>
+<td align="center"> 07:31:05 </td>
+<td align="center"> 02:32:40 </td>
+<td align="center"><a href="/cgi-bin/sddb/wchart_sddb?database=sddb&vol=ecg&record=52&window=10&tstartHMS=02:32:35&sweep=25&annotator=atr" target="_other">52-waveform</a></td> 
+</tr>
+
+</tbody>
+</table>
+</center>
+
+<p>
+<hr>
+<p>
+<font size=+1><b>Clinical information</b></font> 
+
+<p>
+
+<center>
+<table border="1" cellspacing="0" cellpadding="3" width="800">
+<tr bgcolor="dddddd">
+<th align="center" width="10%"> Subject # </th>
+<th align="center" width="8%"> Gender </th>
+<th align="center" widht="7%"> Age </th>
+<th align="center" widht="15%"> History </th>
+<th align="center" widht="25%"> Medication </th>
+<th align="center" widht="35%"> Underling Cardiac Rhythm </th>
+</tr>
+
+<tr>
+<td align="center">30</td>
+<td align="center">Male</td>
+<td align="center">43</td>
+<td align="left">&nbsp; None available</td>
+<td align="left">&nbsp; Unknown</td>
+<td align="left">&nbsp; Sinus</td>
+</tr>
+
+<tr>
+<td align="center">31</td>
+<td align="center">Female</td>
+<td align="center">72</td>
+<td align="left">&nbsp; Heart failure</td>
+<td align="left">&nbsp; digoxin; quinidine gluconate</td>
+<td align="left">&nbsp; Sinus</td>
+</tr>
+
+<tr>
+<td align="center">32</td>
+<td align="center">N/A</td>
+<td align="center">62</td>
+<td align="left">&nbsp; Coronary bypass grafting; <br>&nbsp; History of arrhythmia</td>
+<td align="left">&nbsp; Procan SR; beta-blocker</td>
+<td align="left">&nbsp; Sinus with intermittent <br>&nbsp; demand verntricular pacing; <br>&nbsp; CPR at time of cardiac arrest &nbsp; </td>
+</tr>
+
+<tr>
+<td align="center">33</td>
+<td align="center">Female</td>
+<td align="center">30</td>
+<td align="left">&nbsp; None available </td>
+<td align="left">&nbsp; Unknown </td>
+<td align="left">&nbsp; Sinus </td>
+</tr>
+
+<tr>
+<td align="center">34</td>
+<td align="center">Male</td>
+<td align="center">34</td>
+<td align="left">&nbsp; None available </td>
+<td align="left">&nbsp; Unknown </td>
+<td align="left">&nbsp; Sinus </td>
+</tr>
+
+<tr>
+<td align="center">35</td>
+<td align="center">Female</td>
+<td align="center">72</td>
+<td align="left">&nbsp; Mitral valve replacement</td>
+<td align="left">&nbsp; digoxin </td>
+<td align="left">&nbsp; Atrial fibrillation (AF) </td>
+</tr>
+
+<tr>
+<td align="center">36</td>
+<td align="center">Male</td>
+<td align="center">75</td>
+<td align="left">&nbsp; Cardiac surgery </td>
+<td align="left">&nbsp; digoxin; quinidine </td>
+<td align="left">&nbsp; AF </td>
+</tr>
+
+<tr>
+<td align="center">37</td>
+<td align="center">Female</td>
+<td align="center">89</td>
+<td align="left">&nbsp; N/A </td>
+<td align="left">&nbsp; N/A </td>
+<td align="left">&nbsp; AF </td>
+</tr>
+
+
+<tr>
+<td align="center">38</td>
+<td align="center">N/A</td>
+<td align="center">N/A</td>
+<td align="left">&nbsp; N/A </td>
+<td align="left">&nbsp; N/A </td>
+<td align="left">&nbsp; Sinus </td>
+</tr>
+
+<tr>
+<td align="center">39</td>
+<td align="center">Male</td>
+<td align="center">66</td>
+<td align="left">&nbsp; Acute myelogenous leukemia</td>
+<td align="left">&nbsp; digoxin; quinidine </td>
+<td align="left">&nbsp; Sinus </td>
+</tr>
+
+<tr>
+<td align="center">40</td>
+<td align="center">Male</td>
+<td align="center">79</td>
+<td align="left">&nbsp; N/A</td>
+<td align="left">&nbsp; N/A</td>
+<td align="left">&nbsp; Paced </td>
+</tr>
+
+<tr>
+<td align="center">41</td>
+<td align="center">Male</td>
+<td align="center">N/A</td>
+<td align="left">&nbsp; None available </td>
+<td align="left">&nbsp; Unknown  </td>
+<td align="left">&nbsp; Sinus </td>
+</tr>
+
+<tr>
+<td align="center">42</td>
+<td align="center">Male</td>
+<td align="center">17</td>
+<td align="left">&nbsp; Hypertrophic cardiomyopathy; <br>&nbsp; Positive family history of <br> &nbsp; sudden death </td>
+<td align="left">&nbsp; Unknown </td>
+<td align="left">&nbsp; Sinus </td>
+</tr>
+
+</tr>
+<tr>
+<td align="center">43</td>
+<td align="center">Male</td>
+<td align="center">35</td>
+<td align="left">&nbsp; Coronary artery disease</td>
+<td align="left">&nbsp; Unknown </td>
+<td align="left">&nbsp; Intermittent ventricular <br> &nbsp; pacing </td>
+</tr>
+
+<tr>
+<td align="center">44</td>
+<td align="center">Male</td>
+<td align="center">N/A</td>
+<td align="left">&nbsp; None available</td>
+<td align="left">&nbsp; Unknown</td>
+<td align="left">&nbsp; Sinus</td>
+</tr>
+
+<tr>
+<td align="center">45</td>
+<td align="center">Male</td>
+<td align="center">68</td>
+<td align="left">&nbsp; History of ventricular ectopy</td>
+<td align="left">&nbsp; digoxin; quinidine gluconate  </td>
+<td align="left">&nbsp; Sinus </td>
+</tr>
+
+<tr>
+<td align="center">46</td>
+<td align="center">Female</td>
+<td align="center">N/A</td>
+<td align="left">&nbsp; None available </td>
+<td align="left">&nbsp; Unknown </td>
+<td align="left">&nbsp; Sinus </td>
+</tr>
+
+<tr>
+<td align="center">47</td>
+<td align="center">Male</td>
+<td align="center">34</td>
+<td align="left">&nbsp; None available</td>
+<td align="left">&nbsp; Unknown </td>
+<td align="left">&nbsp; Sinus </td>
+</tr>
+
+<tr>
+<td align="center">48</td>
+<td align="center">Male</td>
+<td align="center">80</td>
+<td align="left">&nbsp; N/A </td>
+<td align="left">&nbsp; N/A </td>
+<td align="left">&nbsp; Sinus </td>
+</tr>
+
+<tr>
+<td align="center">49</td>
+<td align="center">Male</td>
+<td align="center">73</td>
+<td align="left">&nbsp; Coronary artery s/p <br> &nbsp; myocardial infarction; <br> &nbsp; History of ventricular <br>&nbsp; tachycardia</td>
+<td align="left">&nbsp; Unknown </td>
+<td align="left">&nbsp; Sinus </td>
+</tr>
+
+<tr>
+<td align="center">50</td>
+<td align="center">Female</td>
+<td align="center">68</td>
+<td align="left">&nbsp;  Coronary artery bypass graft; <br> &nbsp; Mitral valve replacement </td>
+<td align="left">&nbsp; digoxin; quinidine;<br>&nbsp; propranolol; <br>&nbsp; potassium; diuretics</td>
+<td align="left">&nbsp; AF </td>
+</tr>
+
+<tr>
+<td align="center">51</td>
+<td align="center">Female</td>
+<td align="center">67</td>
+<td align="left">&nbsp; N/A </td>
+<td align="left">&nbsp; N/A </td>
+<td align="left">&nbsp; Sinus with intermittent<br> &nbsp; pacing &nbsp; </td>
+</tr>
+
+
+<tr>
+<td align="center">52</td>
+<td align="center">Female</td>
+<td align="center">82</td>
+<td align="left">&nbsp; Heart failure</td>
+<td align="left">&nbsp; None listed </td>
+<td align="left">&nbsp; Sinus </td>
+</tr>
+
+</table>
+</center>
+
+<p>
+<hr>
+
+<!--#include virtual="/footer.shtml"-->
+
+</body>
+</html>
+
