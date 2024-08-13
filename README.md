@@ -51,6 +51,7 @@ Run the provided Python scripts to perform data extraction as follows:
 python src/preprocess/generate_ecg_segments_from_vf_onset.py --interval_start 30 --interval_end 60 
 python src/preprocess/generate_ecg_segments_from_vf_onset.py --interval_start 60 --interval_end 120 
 python src/preprocess/generate_ecg_segments_from_vf_onset.py --interval_start 120 --interval_end 180
+```
 
 # Binary Classification with Transformer Model
 
