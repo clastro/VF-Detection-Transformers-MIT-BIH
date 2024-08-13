@@ -68,7 +68,7 @@ def process_data(db_number, vf_start_time_str, data_path, interval_start, interv
         standardized_data = standardize_data(resampled_data)
         
         split_and_save_data(standardized_data, db_number, samples_20sec, save_path)
-data_path = '/smc_work/home/weladmin/Desktop/code/Research/shea/VF/data/sudden-cardiac-death-holter-database-1.0.0/'
+data_path = './data/sudden-cardiac-death-holter-database-1.0.0/'
     # 데이터베이스와 VF 발생 시간 목록
 databases = [
     ('30', '07:54:33'),
