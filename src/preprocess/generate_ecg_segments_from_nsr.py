@@ -4,9 +4,9 @@ import os
 import random
 
 # ECG 데이터와 주석 파일 로드
-file_path = '/smc_work/home/weladmin/Desktop/code/Research/shea/VF/data/nsr_db_number.txt'
-data_path = '/smc_work/home/weladmin/Desktop/code/Research/shea/VF/data/mit-bih-normal-sinus-rhythm-database-1.0.0/'
-save_path = '/smc_work/datanvme/VF/normal/'
+file_path = './data/nsr_db_number.txt'
+data_path = './data/mit-bih-normal-sinus-rhythm-database-1.0.0/'
+save_path = './VF/normal/'
 
 # 시간 문자열을 초로 변환하는 함수
 def time_to_seconds(time_str):
