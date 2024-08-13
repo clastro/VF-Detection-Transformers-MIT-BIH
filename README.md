@@ -50,4 +50,28 @@ Run the provided Python scripts to perform data extraction as follows:
 ```bash
 python src/preprocess/generate_ecg_segments_from_vf_onset.py --interval_start 30 --interval_end 60 
 python src/preprocess/generate_ecg_segments_from_vf_onset.py --interval_start 60 --interval_end 120 
-python src/preprocess/generate_ecg_segments_from_vf_onset.py --interval_start 120 --interval_end 180 
+python src/preprocess/generate_ecg_segments_from_vf_onset.py --interval_start 120 --interval_end 180
+
+# Binary Classification with Transformer Model
+
+This project demonstrates a binary classification example using a Transformer model. The model is implemented with TensorFlow and is designed for processing text or sequence data.
+
+## Key Components
+
+1. **Data Loading and Preprocessing**
+   - Load `.npy` files and separate data from labels.
+   - Split the dataset into training, validation, and test sets, and save them.
+
+2. **Model Configuration**
+   - **Transformer Model**: Composed of Transformer blocks including Multi-Head Attention, Positionwise Feedforward Network, and Positional Encoding.
+   - **Training and Evaluation**: Train and evaluate the model, and visualize the ROC curve.
+
+3. **Running in Jupyter Notebook**
+   - Includes `DebugModel` class for debugging intermediate outputs of the model.
+
+## Installation and Requirements
+
+Before running the project, install the necessary libraries and packages:
+
+```bash
+pip install tensorflow numpy scikit-learn matplotlib pillow
