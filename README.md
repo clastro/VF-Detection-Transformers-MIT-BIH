@@ -4,10 +4,14 @@ This project utilizes the Sudden Cardiac Death Database (SDDB) provided by Physi
 
 ## Overview
 
+### Sudden Cardiac Death Database (SDDB)
 The SDDB contains Holter recordings from patients who experienced sustained ventricular tachyarrhythmia and, in many cases, actual cardiac arrest. The database includes:
 - 18 patients with underlying sinus rhythm
 - 1 patient who was continuously paced
 - 4 patients with atrial fibrillation
+
+### Normal Sinus Rhythm Database (NSDB)
+The NSDB consists of ECG recordings from patients with normal sinus rhythm, providing a baseline for comparison with the ECG data from SDDB patients.
 
 ## Data Extraction Process
 
@@ -18,6 +22,8 @@ For each patient who experienced VF, the following ECG data segments are extract
 - 20-second continuous ECG rhythm segments from 60 to 120 minutes before VF onset.
 - 20-second continuous ECG rhythm segments from 120 to 180 minutes before VF onset.
 
+For patients in the NSDB, similar 20-second continuous ECG rhythm segments are extracted to serve as a baseline for comparison.
+
 ### Data Extraction Procedure
 
 1. **Load Data:**
@@ -27,14 +33,23 @@ For each patient who experienced VF, the following ECG data segments are extract
    - VF onset times and durations are converted into seconds for precise indexing.
 
 3. **Segment Extraction:**
-   - For each patient, extract 20-second continuous ECG rhythm segments at the specified intervals:
-     - 30 to 60 minutes before VF onset
-     - 60 to 120 minutes before VF onset
-     - 120 to 180 minutes before VF onset
+   - **For SDDB Patients:**
+      - For each patient, extract 20-second continuous ECG rhythm segments at the specified intervals:
+        - 30 to 60 minutes before VF onset
+        - 60 to 120 minutes before VF onset
+        - 120 to 180 minutes before VF onset
+   - **For NSDB Patients:**
+     - Randomly extract 20-second continuous ECG rhythm segments from the available data to establish a baseline normal sinus rhythm.
+    
+
 
 4. **Data Saving:**
    - Extracted segments are saved as `.npy` files for further analysis.
+   - For the NSDB, ensure that the segments are extracted from baseline periods of normal sinus rhythm.
 
+5. **Comparison**
+   - Perform a comparative analysis between the ECG segments from SDDB (pre-VF) and the baseline segments from the NSDB to identify patterns or anomalies associated with the onset of VF.
+     
 ## Directory Structure
 
 - `src/`: Source code for data extraction and processing.
@@ -76,3 +91,4 @@ Before running the project, install the necessary libraries and packages:
 
 ```bash
 pip install tensorflow numpy scikit-learn matplotlib pillow
+```
