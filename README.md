@@ -1,4 +1,5 @@
-## Sudden Cardiac Death Database (SDDB) and Normal Sinus Rhythm Database (NSDB) - Data Extraction & Analysis
+## Sudden Cardiac Death Database (SDDB) and Normal Sinus Rhythm Database (NSDB) 
+## Data Extraction & Analysis
 
 This project utilizes the Sudden Cardiac Death Database (SDDB) provided by PhysioNet to extract and preprocess ECG data for research purposes. The focus is on patients who experienced ventricular fibrillation (VF). We specifically extract 20-second continuous rhythm segments of ECG data at different time intervals before the onset of VF.
 
