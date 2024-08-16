@@ -34,7 +34,7 @@ def standardize_data(data):
     std = np.std(data)
     return (data - mean) / std
 
-# 데이터 나누기 및 저장
+
 def split_and_save_data(data, db_number, samples_20sec, save_path):
     num_segments = len(data) // samples_20sec
     os.makedirs(save_path, exist_ok=True)
@@ -44,11 +44,11 @@ def split_and_save_data(data, db_number, samples_20sec, save_path):
         filename = os.path.join(save_path, f'{db_number}_segment_{i+1}.npy')
         np.save(filename, segment)
 
-# 데이터 처리
+
 def process_data(db_number, vf_start_time_str, data_path, interval_start, interval_end, save_path):
     record, fs, vf_start_time = load_data(db_number, vf_start_time_str, data_path)
     if record is not None:
-        # 시간대 간격 (초 단위)
+       
         interval_start_seconds = interval_start * 60
         interval_end_seconds = interval_end * 60
 
@@ -62,9 +62,9 @@ def process_data(db_number, vf_start_time_str, data_path, interval_start, interv
         # ECG 데이터 추출
         data = record.p_signal[int(sample_start * fs):int(sample_end * fs) + int(20 * fs)]
 
-        # 리샘플링
+        
         resampled_data = resample_data(data, fs, 128)
-        # 표준화
+        
         standardized_data = standardize_data(resampled_data)
         
         split_and_save_data(standardized_data, db_number, samples_20sec, save_path)
